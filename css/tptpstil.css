@@ -1,0 +1,112 @@
+/* =============================================
+   TPTP Projekat - Grupa 15
+   Audi BiH web stranica
+   CSS: Anida Jaganjac
+   ============================================= */
+
+/* CSS varijable - globalne boje, fontovi i razmaci */
+:root {
+  --boja-primarna: #BB0A21;      /* Audi crvena - koristi se za akcente */
+  --boja-pozadina: #cccccc;      /* Pozadina cijele stranice */
+  --boja-tekst: #111111;         /* Glavni tekst */
+  --boja-kartica: #ffffff;       /* Pozadina kartica */
+  --font-glavni: 'Arial', sans-serif;
+  --razmak-kartica: 1.5rem;      /* Gap između kartica u gridu */
+}
+
+/* Reset defaultnih browser stilova */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Osnovna tipografija i pozadina */
+body {
+  background-color: var(--boja-pozadina);
+  color: var(--boja-tekst);
+  font-family: var(--font-glavni);
+}
+
+/* Header - bijela traka sa Audi crvenim borderom */
+header {
+  background-color: #ffffff;
+  padding: 16px 32px;
+  border-bottom: 3px solid var(--boja-primarna);
+}
+
+/* Logo kontejner - Flexbox za poravnanje */
+.logo-bar {
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Navigacija - Flexbox, horizontalno, poravnata desno */
+.side-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 24px;
+  padding: 0 32px;
+  background-color: #ffffff;
+}
+
+/* Stilovi za nav linkove */
+.side-nav a {
+  text-decoration: none;
+  color: var(--boja-tekst);
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+/* Hover efekat na nav linkovima */
+.side-nav a:hover {
+  color: var(--boja-primarna);
+}
+
+/* CSS Grid za kartice - 3 kolone na desktopu */
+.models {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--razmak-kartica);
+}
+
+/* Kartica - bijela, zaobljeni rubovi, tranzicija za hover */
+.car-card {
+  background-color: var(--boja-kartica);
+  min-height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover animacija - kartica se podiže */
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Slika unutar kartice */
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  background-color: #a0a0a0;
+}
+
+/* ---- Media queries - responzivnost ---- */
+
+/* Tablet - 2 kolone */
+@media (max-width: 900px) {
+  .models { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Mobitel - 1 kolona */
+@media (max-width: 600px) {
+  .models { grid-template-columns: 1fr; }
+  .side-nav { justify-content: center; flex-wrap: wrap; gap: 12px; }
+}
