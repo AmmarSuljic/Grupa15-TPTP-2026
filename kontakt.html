@@ -38,45 +38,127 @@
 
 </header>
 
+<!-- ================= MAIN ================= -->
+<main class="kontakt-main">
 
+    <!-- JS ĆE OVO PUNITI -->
+    <div class="selected-model-box">
+        <p>Odabrani model: 
+            <strong id="selectedModel">Opšti upit</strong>
+        </p>
+    </div>
+
+    <form id="contactForm">
+
+        <!-- MODEL DROPDOWN (JS ga dopunjava) -->
+        <div class="form-group">
+            <label for="modelSelect">Model</label>
+            <select id="modelSelect">
+                <option value="">Opšti upit</option>
+                <option value="Audi A3">Audi A3</option>
+                <option value="Audi A5">Audi A5</option>
+                <option value="Audi Q5">Audi Q5</option>
+                <option value="Audi A6">Audi A6</option>
+                <option value="Audi e-tron">Audi e-tron</option>
+                <option value="Audi Q3">Audi Q3</option>
+            </select>
+        </div>
+
+        <!-- IME -->
+        <div class="form-group">
+            <label>Ime</label>
+            <input type="text" id="ime">
+            <span class="error" id="imeError"></span>
+        </div>
+
+        <!-- PREZIME -->
+        <div class="form-group">
+            <label>Prezime</label>
+            <input type="text" id="prezime">
+            <span class="error" id="prezimeError"></span>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" id="email">
+            <span class="error" id="emailError"></span>
+        </div>
+
+        <!-- TELEFON -->
+        <div class="form-group">
+            <label>Telefon</label>
+            <input type="text" id="telefon">
+            <span class="error" id="telefonError"></span>
+        </div>
+
+        <!-- TEMA -->
+        <div class="form-group">
+            <label>Tema upita</label>
+            <select id="tema">
+                <option value="">Izaberite temu</option>
+                <option value="model">Upit o modelu</option>
+                <option value="cijena">Cijena</option>
+                <option value="test_voznja">Test vožnja</option>
+            </select>
+            <span class="error" id="temaError"></span>
+        </div>
+
+        <!-- PORUKA -->
+        <div class="form-group">
+            <label>Poruka</label>
+            <textarea id="poruka"></textarea>
+            <span class="error" id="porukaError"></span>
+        </div>
+
+        <!-- BUTOONI -->
+        <button type="submit">Pošalji upit</button>
+        <button type="reset">Reset</button>
+
+        <p id="successMessage"></p>
+
+    </form>
+
+
+</main>
 
 <!-- ================= FOOTER (ISTI KAO OSTALI) ================= -->
-<footer class="site-footer">
+            <footer class="site-footer">
 
-    <div class="footer-logo">
-        <img src="images/audi logo crni.png"
-             alt="Audi logo"
-             usemap="#audiMapFooter"
-             class="logo">
+                <div class="footer-logo">
+                    <img src="images/audi logo crni.png"
+                        alt="Audi logo"
+                        usemap="#audiMapFooter"
+                        class="logo">
 
-        <map name="audiMapFooter">
-            <area shape="rect"
-                  coords="0,0,300,150"
-                  href="index.html"
-                  alt="Početna stranica">
-        </map>
-    </div>
+                    <map name="audiMapFooter">
+                        <area shape="rect"
+                            coords="0,0,300,150"
+                            href="index.html"
+                            alt="Početna stranica">
+                    </map>
+                </div>
 
-    <p class="footer-title">&copy; 2026 Grupa 15 - Audi BiH</p>
+                <p class="footer-title">&copy; 2026 Grupa 15 - Audi BiH</p>
 
-    <div class="footer-team">
-        <span class="team-label">Članovi tima:</span>
-        <div class="team-members">
-            <span class="member">Ammar Suljić</span>
-            <span class="member">Anida Jaganjac</span>
-            <span class="member">Andrej Hajdukov</span>
-        </div>
-    </div>
+                <div class="footer-team">
+                    <span class="team-label">Članovi tima:</span>
+                    <div class="team-members">
+                        <span class="member">Ammar Suljić</span>
+                        <span class="member">Anida Jaganjac</span>
+                        <span class="member">Andrej Hajdukov</span>
+                    </div>
+                </div>
 
-    <div class="footer-links">
-        <a href="index.html">Početna</a> |
-        <a href="sadrzaj.html">Modeli</a> |
-        <a href="https://github.com/ammarsuljic-ui/Grupa15-TPTP-2026" target="_blank">
-            GitHub Repozitorij
-        </a>
-    </div>
+                <div class="footer-links">
+                    <a href="index.html">Početna</a> |
+                    <a href="sadrzaj.html">Modeli</a> |
+                    <a href="https://github.com/ammarsuljic-ui/Grupa15-TPTP-2026" target="_blank">
+                        GitHub Repozitorij
+                    </a>
+                </div>
 
-</footer>
+            </footer>
 
 </div>
 
