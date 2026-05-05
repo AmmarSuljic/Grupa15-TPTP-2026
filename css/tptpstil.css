@@ -155,15 +155,14 @@ header {
 }
 
 /* ---- KARTICE - 2 po redu, centrirane ---- */
-/* Uz pomoć Claude-a za centriranje grida.
-   Razumijem da justify-content: center centrira kolone,
-   a repeat(2, 400px) pravi 2 kolone fiksne širine. */
+/* Uz pomoć Claude-a za centriranje grida. */
+
 .models {
   display: grid;
   grid-template-columns: repeat(2, 400px);
   justify-content: center;
   gap: var(--razmak-kartica);
-  padding: 32px;
+  padding: 30px;
 }
 
 /* Kartica */
