@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "bs">
+<html lang = "bs"> <!-- postavka bosanskog jezika -->
             <head>
                 <meta charset="UTF-8">
                 <!-- Omogućava pravilan prikaz posebnih znakova balkanskih jezika (č, ć, ž...) -->
@@ -10,12 +10,14 @@
                 <title>Audi BiH</title>
                 <link rel="icon" href="images/audi logo crni.png" >
 
-                <!-- Povezivanje eksternog CSS fajla -->
-
-                    <!-- PWA manifest -->
+            
                 
-
+<!-- Povezivanje eksternog CSS fajla -->
 <link rel="stylesheet" href="css/tptpstil.css">
+
+
+<!-- PWA manifest -->
+
             </head>
 
                 <body>
@@ -38,7 +40,7 @@
         <area shape="rect"
               coords="0,0,300,150"
               href="index.html"
-              alt="Početna stranica">
+              alt="Početna stranica"> <!-- postavka klikabilnog logoa -->
     </map>
 
 </div>
@@ -65,18 +67,24 @@
 
     </nav>
 
-    <!-- SIDEBAR (OSTAJE TVOJ ORIGINAL) -->
+    <!-- SIDEBAR -->
     <nav class="side-nav">
-        <a href="index.html">Početna</a>
-        <a href="sadrzaj.html">Ponuda modela</a>
-        <a href="kontakt.html">Dodatna oprema</a>
-        <a href="https://github.com/ammarsuljic-ui/Grupa15-TPTP-2026" target="_blank">
-            GitHub Repositorij
-        </a>
-    </nav>
+    <a href="index.html">Početna</a>
+    <a href="sadrzaj.html">Ponuda modela</a>
+    <a href="#">Sedan</a>
+    <a href="#">SUV</a>
+    <a href="#">Sport</a>
+    <a href="#">Električni</a>
+
+    <a href="kontakt.html">Dodatna oprema</a>
+
+    <a href="https://github.com/ammarsuljic-ui/Grupa15-TPTP-2026" target="_blank">
+        GitHub Repozitorij
+    </a>
+</nav>
 
 </header>
-                         <!-- kartice -->
+                         <!-- kartice sa modelima-->
                         <main class="models">
 
                                     <div class="car-card" id="audi-a3">
@@ -141,7 +149,7 @@
                         
           <h2>Audi iskustvo</h2>
 
-            <iframe width="300" height="200"
+            <iframe width="500" height="300"
               src="https://www.youtube.com/embed/RD_LmCPMa38"
               title="Audi promo video"
               allowfullscreen>
@@ -152,26 +160,49 @@
           </aside>
 
 
-   
+
+        <!-- footer ili donjio dio stranice gdje ce se nalaziti audi logo link za kontakt i imena clanova grupe -->
                         <footer class="site-footer">
 
-                        <p class="footer-title">&copy; 2026 Grupa 15 - Audi BiH</p>
+    <!-- LOGO -->
+    <div class="footer-logo">
 
-                        <div class="footer-team">
-                            <span class="team-label">Članovi tima:</span>
+        <img src="images/audi logo crni.png"
+             alt="Audi logo"
+             usemap="#audiMapFooter"
+             class="logo">
 
-                            <div class="team-members">
-                                <span class="member">Ammar Suljić</span>
-                                <span class="member">Anida Jaganjac</span>
-                                <span class="member">Andrej Hajdukov</span>
-                            </div>
-                        </div>
+        <map name="audiMapFooter">
+            <area shape="rect"
+                  coords="0,0,300,150"
+                  href="index.html"
+                  alt="Početna stranica">
+        </map>
 
-                        <div class="footer-links">
-                            <a href="https://github.com/ammarsuljic-ui/Grupa15-TPTP-2026" target="_blank">
-                                GitHub Repozitorij
-                            </a>
-                        </div>
+    </div>
+
+    <!-- NASLOV -->
+    <p class="footer-title">&copy; 2026 Grupa 15 - Audi BiH</p>
+
+    <!-- TIM -->
+    <div class="footer-team">
+        <span class="team-label">Članovi tima:</span>
+
+        <div class="team-members">
+            <span class="member">Ammar Suljić</span>
+            <span class="member">Anida Jaganjac</span>
+            <span class="member">Andrej Hajdukov</span>
+        </div>
+    </div>
+
+    <!-- LINKOVI -->
+    <div class="footer-links">
+        <a href="kontakt.html">Kontakt</a> |
+        
+        <a href="https://github.com/ammarsuljic-ui/Grupa15-TPTP-2026" target="_blank">
+            GitHub Repozitorij
+        </a>
+    </div>
 
 </footer>
 
