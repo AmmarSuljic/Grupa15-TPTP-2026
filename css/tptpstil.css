@@ -36,8 +36,9 @@ header {
   border-bottom: 3px solid var(--boja-primarna);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: rel;
+  justify-content: space-between; 
+  position: relative;
+   z-index: 1000;
 }
 
 /* Logo */
@@ -53,7 +54,8 @@ header {
 
 /* ---- DROPDOWN MENI ---- */
 /* Glavni nav - Flexbox horizontalno */
-.menu ul {
+
+.menu > ul {
   list-style: none;
   display: flex;
   gap: 24px;
@@ -85,21 +87,21 @@ header {
   display: none;
   position: absolute;
   top: 100%;
-  right: 0;
-  left: auto;
+  left: 0;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   border-top: 3px solid var(--boja-primarna);
   min-width: 160px;
-  z-index: 100;
-  flex-direction: column;
-  gap: 0;
+  z-index: 9999;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  flex-direction: column;
+  list-style: none;
 }
 
 /* Pokazivanje dropdowna na hover */
 .dropdown:hover .dropdown-menu {
-  display: flex;
+  display: block;
 }
 
 .dropdown-menu li a {
@@ -109,11 +111,13 @@ header {
   color: var(--boja-tekst);
   text-decoration: none;
   white-space: nowrap;
+  transition: all 0.2s ease;
 }
 
 .dropdown-menu li a:hover {
   background-color: var(--boja-primarna);
   color: #ffffff;
+  padding-left: 20px;
 }
 
 /* ---- SIDE NAV ---- */
