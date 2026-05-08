@@ -3,6 +3,12 @@
    Audi BiH web stranica
    CSS: Anida Jaganjac
    ============================================= */
+ 
+/* Odbrani font */
+@font-face {
+  font-family: 'auditype_extendednormal';
+  src: url(../fonts/auditype_extendednormal.ttf) format('truetype');
+}
 
 /* CSS varijable - globalne boje, fontovi i razmaci */
 :root {
@@ -10,24 +16,24 @@
   --boja-pozadina: #cccccc;
   --boja-tekst: #111111;
   --boja-kartica: #ffffff;
-  --font-glavni: 'Arial', sans-serif;
+  --font-glavni: 'auditype_extendednormal', sans-serif;
   --razmak-kartica: 1.5rem;
 }
-
+ 
 /* Reset defaultnih browser stilova */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 /* Osnovna tipografija i pozadina */
 body {
   background-color: var(--boja-pozadina);
   color: var(--boja-tekst);
   font-family: var(--font-glavni);
 }
-
+ 
 /* ---- HEADER ---- */
 header {
   overflow: visible;
@@ -36,35 +42,35 @@ header {
   border-bottom: 3px solid var(--boja-primarna);
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   position: relative;
-   z-index: 1000;
+  z-index: 1000;
 }
-
+ 
 /* Logo */
 .logo-bar {
   display: flex;
   align-items: center;
 }
-
+ 
 .logo {
   height: 60px;
   width: auto;
 }
-
+ 
 /* ---- DROPDOWN MENI ---- */
-/* Glavni nav - Flexbox horizontalno */
 
+/* Uradjeno uz pomoc Claude AI: .menu > ul */
 .menu > ul {
   list-style: none;
   display: flex;
   gap: 24px;
 }
+ 
 .menu {
-
   position: relative;
 }
-
+ 
 .menu ul li a {
   text-decoration: none;
   color: var(--boja-tekst);
@@ -72,17 +78,15 @@ header {
   font-weight: 500;
   padding: 8px 0;
 }
-
+ 
 .menu ul li a:hover {
   color: var(--boja-primarna);
 }
-
-/* Dropdown kontejner - pozicioniranje */
+ 
 .dropdown {
   position: relative;
 }
-
-/* Sakriveni dropdown lista */
+ 
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -94,16 +98,14 @@ header {
   min-width: 160px;
   z-index: 9999;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-
   flex-direction: column;
   list-style: none;
 }
-
-/* Pokazivanje dropdowna na hover */
+ 
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-
+ 
 .dropdown-menu li a {
   display: block;
   padding: 10px 16px;
@@ -113,15 +115,14 @@ header {
   white-space: nowrap;
   transition: all 0.2s ease;
 }
-
+ 
 .dropdown-menu li a:hover {
   background-color: var(--boja-primarna);
   color: #ffffff;
   padding-left: 20px;
 }
-
+ 
 /* ---- SIDE NAV ---- */
-/* Sidebar - vertikalno lijevo, centriran sadržaj */
 .side-nav {
   display: flex;
   flex-direction: column;
@@ -135,8 +136,9 @@ header {
   top: 0;
   left: 0;
   padding-top: 100px;
+  z-index: 100;
 }
-
+ 
 .side-nav a {
   text-decoration: none;
   color: #ffffff;
@@ -147,20 +149,19 @@ header {
   text-align: center;
   transition: background 0.2s;
 }
-
+ 
 .side-nav a:hover {
   background-color: var(--boja-primarna);
   color: #ffffff;
 }
-
-/* Pomicanje sadržaja da ne bude ispod sidebara */
+ 
+/* Pomicanje sadrzaja da ne bude ispod sidebara */
 .pozadina {
   margin-left: 200px;
 }
-
-/* ---- KARTICE - 2 po redu, centrirane ---- */
-/* Uz pomoć Claude-a za centriranje grida. */
-
+ 
+/* ---- KARTICE ---- */
+/* Uz pomoc Claude AI za centriranje grida */
 .models {
   display: grid;
   grid-template-columns: repeat(2, 400px);
@@ -168,58 +169,85 @@ header {
   gap: var(--razmak-kartica);
   padding: 30px;
 }
-
-/* Kartica */
+ 
 .car-card {
   background-color: var(--boja-kartica);
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+ 
 .car-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
-
+ 
 .car-card a {
   text-decoration: none;
   color: var(--boja-tekst);
 }
-
+ 
 .car-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
   background-color: #a0a0a0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
+ 
 .car-name {
   padding: 12px 16px;
   font-weight: bold;
   font-size: 16px;
 }
-
-/* ---- ASIDE - video centriran ---- */
+ 
+/* Hover overlay na karticama - uradjeno uz pomoc Claude AI */
+.car-card a::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+ 
+.car-card:hover a::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+.car-card:hover img {
+  transform: scale(1.03);
+  background-color: var(--boja-primarna);
+}
+ 
+/* ---- ASIDE ---- */
 aside {
   text-align: center;
   padding: 40px 32px;
   background-color: #f0f0f0;
 }
-
+ 
 aside h2 {
   margin-bottom: 16px;
   font-size: 22px;
 }
-
+ 
 aside p {
   margin-top: 12px;
   font-size: 14px;
   color: #111111;
 }
-
-/* ---- FOOTER - centriran ---- */
+ 
+/* ---- FOOTER ---- */
 .site-footer {
   background-color: #111111;
   color: #ffffff;
@@ -230,52 +258,244 @@ aside p {
   align-items: center;
   gap: 16px;
 }
-
+ 
 .footer-logo .logo {
   filter: invert(1);
 }
-
+ 
 .footer-title {
   font-size: 14px;
   color: #aaaaaa;
 }
-
+ 
 .footer-team {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
-
+ 
 .team-label {
   font-size: 13px;
   color: #aaaaaa;
 }
-
+ 
 .team-members {
   display: flex;
   gap: 24px;
 }
-
+ 
 .member {
   font-size: 14px;
   font-weight: 500;
 }
-
+ 
 .footer-links {
   display: flex;
   gap: 12px;
   align-items: center;
 }
-
+ 
 .footer-links a {
   color: #aaaaaa;
   text-decoration: none;
   font-size: 13px;
   transition: color 0.2s;
 }
-
+ 
 .footer-links a:hover {
+  color: var(--boja-primarna);
+}
+
+
+/* ============================================= */
+/* ---- SADRZAJ.HTML STILOVI ---- */
+/* ============================================= */
+
+.header {
+  background-color: #ffffff;
+  padding: 16px 32px;
+  border-bottom: 3px solid var(--boja-primarna);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.title {
+  font-size: 20px;
+  color: var(--boja-tekst);
+  flex: 1;
+}
+
+/* Bookmark navigacija u headeru */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--boja-tekst);
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #dddddd;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav a:hover {
+  background-color: var(--boja-primarna);
+  color: #ffffff;
+  border-color: var(--boja-primarna);
+}
+
+
+
+/* Main kontejner */
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 32px;
+}
+
+/* Sekcija za svaki model */
+.model-section {
+  margin-bottom: 80px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #dddddd;
+}
+
+.model-section h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: var(--boja-tekst);
+  border-left: 5px solid var(--boja-primarna);
+  padding-left: 16px;
+  margin-left: -32px;
+ 
+}
+
+/* Galerija slika - 2 kolone */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20;
+  margin-bottom: 32px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #a0a0a0;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.model-section .gallery {
+  margin-left: calc(-32px);
+  margin-right: calc(-32px);
+}
+
+/* Tabela sa specifikacijama */
+.spec-table {
+  width: 106%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  font-size: 14px;
+  margin-left: -32px;
+}
+
+.spec-table th {
+  background-color: var(--boja-primarna);
+  color: #ffffff;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.spec-table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* Izmjenicno bojenje redova - nth-child pseudo klasa */
+.spec-table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.spec-table tbody tr:hover {
+  background-color: #ffe5e5;
+}
+
+/* Nazad na vrh link */
+.model-section > a {
+  display: block;
+  margin-top: 16px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--boja-primarna);
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.model-section > a:hover {
+  color: #880015;
+}
+
+/* lista kategorija */
+.list-section {
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+  padding: 0 32px;
+}
+
+.list-section h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  border-left: 5px solid var(--boja-primarna);
+  padding-left: 16px;
+}
+
+.model-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.model-list > li {
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--boja-tekst);
+}
+
+.model-list > li > ul {
+  list-style: none;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.model-list > li > ul > li a {
+  text-decoration: none;
+  color: #555555;
+  font-weight: normal;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.model-list > li > ul > li a:hover {
   color: var(--boja-primarna);
 }
 
@@ -289,6 +509,8 @@ aside p {
   }
   .side-nav { width: 160px; }
   .pozadina { margin-left: 160px; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .header { flex-wrap: wrap; }
 }
 
 /* Mobitel */
@@ -304,4 +526,9 @@ aside p {
   }
   .pozadina { margin-left: 0; }
   .team-members { flex-direction: column; gap: 4px; }
+  .gallery { grid-template-columns: 1fr; }
+  .main { padding: 24px 16px; }
+  .model-list { flex-direction: column; gap: 24px; }
+  .spec-table { font-size: 12px; }
+  .spec-table th, .spec-table td { padding: 8px 10px; }
 }
