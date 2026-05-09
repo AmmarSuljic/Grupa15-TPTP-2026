@@ -13,7 +13,7 @@
 /* CSS varijable - globalne boje, fontovi i razmaci */
 :root {
   --boja-primarna: #BB0A21;
-  --boja-pozadina: #cccccc;
+  --boja-pozadina: #ebe8e8;
   --boja-tekst: #111111;
   --boja-kartica: #ffffff;
   --font-glavni: 'auditype_extendednormal', sans-serif;
@@ -54,7 +54,7 @@ header {
 }
  
 .logo {
-  height: 60px;
+  height: 80px;
   width: auto;
 }
  
@@ -118,7 +118,7 @@ header {
  
 .dropdown-menu li a:hover {
   background-color: var(--boja-primarna);
-  color: #ffffff;
+  color: #ffffff !important;
   padding-left: 20px;
 }
  
@@ -160,6 +160,107 @@ header {
   margin-left: 200px;
 }
  
+/* ---- UVODNA SEKCIJA ---- */
+.uvodnastrana {
+  padding: 60px 40px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.malinaslov {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--boja-primarna) !important;
+  margin-bottom: 12px;
+}
+
+.uvodnastrana h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.tekstuvoda {
+  font-size: 15px;
+  color: #444444;
+  line-height: 1.7;
+}
+
+/* ---- BACKGROUND IMAGE SEKCIJA  ---- */
+.backgroundRegular-image {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+.backgroundSUV-image {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ---- MODERN INFO SEKCIJA ---- */
+.modern-info {
+  padding: 60px 40px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.section-tag {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--boja-primarna) !important; 
+  margin-bottom: 12px;
+}
+
+.modern-info h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.modern-info p {
+  max-width: 100%;
+ font-size: 15px;
+  color: #444444;
+  line-height: 1.7;
+
+  
+}
+
+/* ---- VIDEO UVOD ---- */
+.videouvod {
+  max-width: 700px;
+  margin: 0 auto 24px auto;
+  text-align: left;
+}
+
+.videouvod h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.tekstvideo {
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+
 /* ---- KARTICE ---- */
 /* Uz pomoc Claude AI za centriranje grida */
 .models {
@@ -312,6 +413,69 @@ aside p {
 /* ---- SADRZAJ.HTML STILOVI ---- */
 /* ============================================= */
 
+.uvod-modeli {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 60px 40px;
+}
+
+.glavni-naslov {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.opis-modela {
+  font-size: 15px;
+  color: #aaaaaa;
+  max-width: 100%;
+  line-height: 1.7;
+}
+
+
+.opismodela {
+  margin-bottom: 24px;
+  padding: 24px 32px;
+  background-color: #ffffff;
+  border-left: 5px solid var(--boja-primarna);
+  margin-left: -32px;
+  width: 106%;
+}
+
+.malitekstmodel {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--boja-primarna);
+  margin-bottom: 8px;
+  
+}
+
+.opismodela h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.opismodela p {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* Tekst ispod tabele */
+.ispodtabele {
+  width: 106%;
+  padding: 16px 32px;
+  background-color: #f5f5f5;
+  border-left: 3px solid #dddddd;
+  margin-bottom: 16px;
+  margin-left: -32px;
+  font-size: 14px;
+  color: #555555;
+  font-style: italic;
+}
+
 .header {
   background-color: #ffffff;
   padding: 16px 32px;
@@ -394,7 +558,7 @@ aside p {
   object-fit: cover;
   border-radius: 5;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #a0a0a0;
+  background-color: #a0a0a0 ;
 }
 
 .gallery img:hover {
@@ -499,7 +663,196 @@ aside p {
   color: var(--boja-primarna);
 }
 
+
+
+/* ============================================= */
+/* ---- KONTAKT.HTML STILOVI ---- */
+/* ============================================= */
+
+.no-sidebar .pozadina {
+  margin-left: 0;
+}
+
+.kontakt-main {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 32px;
+}
+
+.page-title {
+  font-size: 20px;
+  color: var(--boja-tekst);
+ margin-left: auto;
+}
+
+.selected-model-box {
+  background-color: #ffffff;
+  border-left: 5px solid var(--boja-primarna);
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--boja-tekst);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px 12px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  font-family: var(--font-glavni);
+  font-size: 14px;
+  color: var(--boja-tekst);
+  background-color: #ffffff;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--boja-primarna);
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.error {
+  font-size: 12px;
+  color: var(--boja-primarna);
+}
+
+#contactForm button {
+  padding: 10px 24px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-glavni);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#contactForm button[type="submit"] {
+  background-color: var(--boja-primarna);
+  color: #ffffff;
+}
+
+#contactForm button[type="submit"]:hover {
+  background-color: #880015;
+}
+
+#contactForm button[type="reset"] {
+  background-color: #dddddd;
+  color: var(--boja-tekst);
+}
+
+#contactForm button[type="reset"]:hover {
+  background-color: #bbbbbb;
+}
+
+#successMessage {
+  margin-top: 16px;
+  font-size: 14px;
+  color: green;
+}
+
 /* ---- Media queries ---- */
+
+
+/* Automatski tamni mod prema sistemskim postavkama korisnika */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --boja-pozadina: #1a1a1a;
+    --boja-tekst: #ffffff;
+    --boja-kartica: #2a2a2a;
+  }
+
+  header .logo {
+  filter: invert(1);
+}
+
+  header { background-color: #646464; }
+  .side-nav { background-color: #000000; }
+  .spec-table tbody tr:nth-child(even) { background-color: #2a2a2a; }
+  .spec-table td { border-bottom-color: #333333; }
+  aside { background-color: #222222; }
+
+  /* Polja forme u tamnom modu */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    background-color: #646464;
+    color: #ffffff;
+    border-color: #444444;
+  }
+
+ .selected-model-box{
+    background-color: #646464;
+  }
+ 
+  .header {
+    background-color: #646464;
+    border-bottom-color: var(--boja-primarna);
+  }
+
+  .opismodela{
+    background-color: #161616;
+  }
+
+  .opismodela h3,
+  .opismodela p {
+    color: #ffffff;
+}
+  .title {
+    color: #ffffff;
+  }
+
+  .nav a {
+    color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .nav a:hover {
+    background-color: var(--boja-primarna);
+    border-color: var(--boja-primarna);
+  }
+
+ .ispodtabele {
+  background-color: #3a3939;
+  border-left-color: var(--boja-primarna);
+}
+
+ 
+  p{
+    color: #ffffff !important;
+  }
+
+
+  .gallery img {
+  background-color: #3a3939;
+  }
+
+  #contactForm button {
+  color: #111111 !important;
+}
+}
+
 
 /* Tablet */
 @media (max-width: 900px) {
