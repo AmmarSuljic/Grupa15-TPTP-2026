@@ -227,8 +227,9 @@ header {
 
 .backgroundSUV-image {
   display: block;
-  width: 100%;
+  width: 105%;
   overflow: hidden;
+  margin-left: -40px;
 }
 
 /* ---- MODERN INFO SEKCIJA ---- */
@@ -1028,7 +1029,8 @@ aside p {
   .side-nav { background-color: #000000; }
   .spec-table tbody tr:nth-child(even) { background-color: #2a2a2a; }
   .spec-table td { border-bottom-color: #333333; }
-  aside { background-color: #222222; }
+  aside { background-color: #1a1a1a; }
+  .newsletter{ background-color: #1a1a1a;}
 
   /* Polja forme u tamnom modu */
   .form-group input,
