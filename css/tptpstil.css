@@ -32,6 +32,7 @@ body {
   background-color: var(--boja-pozadina);
   color: var(--boja-tekst);
   font-family: var(--font-glavni);
+  
 }
  
 /* ---- HEADER ---- */
@@ -174,6 +175,7 @@ header {
 .pozadina {
   margin-left: 0;
   transition: margin-left 0.3s ease;
+  
 }
 
 .pozadina:has(.logo-bar:hover),
@@ -208,6 +210,37 @@ header {
   font-size: 15px;
   color: #444444;
   line-height: 1.7;
+}
+
+/* ---- HERO BUTTONS ---- */
+
+.hero-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: #111111;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-family: var(--font-glavni);
+  font-size: 14px;
+  border-bottom: 2px solid transparent;
+  text-align: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  margin-top: 24px;
+  margin-right: 12px;
+}
+
+.hero-btn:hover {
+  border-bottom-color: var(--boja-primarna);
+  background-color: #1e1e1e;
+}
+
+.hero-btn.secondary {
+  background-color: #111111;
+}
+
+.hero-btn.secondary:hover {
+  border-bottom-color: var(--boja-primarna);
+  background-color: #1e1e1e;
 }
 
 /* ---- BACKGROUND IMAGE SEKCIJA  ---- */
@@ -588,11 +621,14 @@ aside p {
 }
 /* ---- FOOTER ---- */
 .site-footer {
+  width: 105%;
+  margin-left: -40px;
+  margin-top: auto;
   background-color: #111111;
   color: #ffffff;
   text-align: center;
-  padding: 40px 32px;
-  display: flex;
+  padding: 40px 10px;
+  display:flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
