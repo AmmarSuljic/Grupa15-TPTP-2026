@@ -1067,7 +1067,7 @@ aside p {
   .spec-table td { border-bottom-color: #333333; }
   aside { background-color: #1a1a1a; }
   .newsletter{ background-color: #1a1a1a;}
-
+  .dropdown-menu li a { color: #111111 !important; }
   /* Polja forme u tamnom modu */
   .form-group input,
   .form-group select,
