@@ -215,7 +215,7 @@ header {
 
 .tekstuvoda {
   font-size: 15px;
-  color: #444444;
+  color: #646464;
   line-height: 1.7;
 }
 
@@ -411,7 +411,7 @@ header {
 }
 
 .tech-box {
-  background-color: #111111;
+  background-color: #646464;
   color: #ffffff;
   padding: 32px 24px;
   border-left: 4px solid var(--boja-primarna);
@@ -430,7 +430,7 @@ header {
 
 .tech-box p {
   font-size: 14px;
-  color: #aaaaaa;
+  color: #d3d1d1;
   line-height: 1.7;
 }
 
@@ -559,7 +559,7 @@ aside p {
 .saloni li a {
   display: block;
   padding: 14px 20px;
-  background-color: #111111;
+  background-color: #646464;
   color: #ffffff !important;
   text-decoration: none;
   font-size: 14px;
@@ -600,7 +600,7 @@ aside p {
   font-family: var(--font-glavni);
   font-size: 14px;
   color: var(--boja-tekst);
-  background-color: #444444;
+  background-color: #b8b5b5;
   width: 300px;
   transition: border-color 0.2s;
 }
@@ -695,7 +695,7 @@ aside p {
 /* ============================================= */
 
 .uvod-modeli {
-  background-color: #111111;
+  background-color: #d3d1d1;
   color: #ffffff;
   padding: 60px 40px;
 }
@@ -704,12 +704,12 @@ aside p {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 16px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .opis-modela {
   font-size: 15px;
-  color: #aaaaaa;
+  color: #646464;
   max-width: 100%;
   line-height: 1.7;
 }
@@ -985,7 +985,7 @@ aside p {
   width: 106%;
   margin-left: -32px;
   padding: 24px 32px;
-  background-color: #111111;
+  background-color: #ffffff;
   border-left: 5px solid var(--boja-primarna);
   margin-bottom: 24px;
   text-align: center;
@@ -993,13 +993,13 @@ aside p {
 
 .config-box h3 {
   font-size: 18px;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 12px;
 }
 
 .config-box p {
   font-size: 14px;
-  color: #aaaaaa !important;
+  color: #646464 !important;
   line-height: 1.6;
   margin-bottom: 16px;
 }
@@ -1008,7 +1008,7 @@ aside p {
   display: inline-block;
   padding: 14px 32px;
   background-color: transparent;
-  color: #ffffff !important;
+  color: #646464 !important;
   text-decoration: none;
   font-family: var(--font-glavni);
   font-size: 14px;
@@ -1141,7 +1141,12 @@ aside p {
   gap: 16px;
 }
  
-/* ---- Media queries ---- */
+
+  label {
+  color: #ffffff !important;
+ }
+
+  /* ---- Media queries ---- */
 
 
 /* Automatski tamni mod prema sistemskim postavkama korisnika */
@@ -1152,18 +1157,40 @@ aside p {
     --boja-tekst: #ffffff;
     --boja-kartica: #2a2a2a;
   }
-
+  
+ 
   header .logo {
   filter: invert(1);
-}
+  }
 
-  header { background-color: #646464; }
-  .side-nav { background-color: #000000; }
-  .spec-table tbody tr:nth-child(even) { background-color: #2a2a2a; }
-  .spec-table td { border-bottom-color: #333333; }
-  aside { background-color: #1a1a1a; }
-  .newsletter{ background-color: #1a1a1a;}
-  .dropdown-menu li a { color: #111111 !important; }
+  header { 
+    background-color: #646464;
+  }
+
+  .side-nav { 
+  background-color: #000000;
+  }
+
+  .spec-table tbody tr:nth-child(even) { 
+    background-color: #2a2a2a; 
+  }
+
+  .spec-table td { 
+  border-bottom-color: #333333; 
+  }
+
+  aside { 
+  background-color: #1a1a1a;
+  }
+
+  .newsletter { 
+  background-color: #1a1a1a;
+  }
+
+  .dropdown-menu li a { 
+  color: #111111 !important; 
+  }
+
   /* Polja forme u tamnom modu */
   .form-group input,
   .form-group select,
@@ -1172,6 +1199,7 @@ aside p {
     color: #ffffff;
     border-color: #444444;
   }
+
 
  .selected-model-box{
     background-color: #646464;
@@ -1189,7 +1217,8 @@ aside p {
   .opismodela h3,
   .opismodela p {
     color: #ffffff;
-}
+  }
+
   .title {
     color: #ffffff;
   }
@@ -1207,9 +1236,23 @@ aside p {
  .ispodtabele {
   background-color: #3a3939;
   border-left-color: var(--boja-primarna);
-}
+ }
 
- 
+ .tech-box {
+    background-color: #111111;
+  }
+
+  .saloni li a {
+    background-color: #111111;
+  }
+
+  .config-box {
+    background-color: #111111;
+  }
+
+  .hero-btn {
+    background-color: #111111;
+  }
   p{
     color: #ffffff !important;
   }
@@ -1221,7 +1264,34 @@ aside p {
 
   #contactForm button {
   color: #111111 !important;
-}
+
+  }
+
+  .config-box h3{
+    color: #ffffff;
+  }
+
+  .config-btn {
+    color: #ffffff !important;
+  }
+    
+ .glavni-naslov {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #ffffff;
+  }
+
+  .opis-modela {
+  font-size: 15px;
+  color: #aaaaaa;
+  max-width: 100%;
+  line-height: 1.7;
+  }
+  
+  .uvod-modeli {
+  background-color: #111111;
+  }
 }
 
 
