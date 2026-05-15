@@ -1548,4 +1548,75 @@ aside p {
   width: 125%;
   margin-left: -39px;
   }
+
+    /* Tabela - horizontalni scroll umjesto preloma */
+  .spec-table {
+    width: 100%;
+    margin-left: 0;
+    display: block;
+    overflow-x: auto;
+  }
+
+  
+  .opismodela {
+    width: 100%;
+    margin-left: 0;
+  }
+
+ 
+  .ispodtabele {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  
+  .config-box {
+    width: 100%;
+    margin-left: 0;
+  }
+
+ 
+  .category-section {
+    width: 100%;
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .category-section h1 {
+    font-size: 20px;
+  }
+
+  
+  .nav {
+    gap: 4px;
+  }
+
+  .nav a {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  
+  .glavni-naslov {
+    font-size: 28px;
+  }
+
+  .hero-slika {
+    width: 108%;
+    margin-left: -36px;
+    
+  }
+
+  .salonmap {
+    width: 125%;
+    overflow: hidden;
+    margin-left: -36px;
+  }
+
+  .site-footer-kontakt {
+  width: 100%;
+  margin-left: 0;
+  text-align: center;
+  align-items: center;
+  }
 }
