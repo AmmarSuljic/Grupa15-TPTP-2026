@@ -267,11 +267,17 @@ header {
 
 .backgroundSUV-image {
   display: block;
-  width: 105%;
+  width: 106%;
   overflow: hidden;
   margin-left: -40px;
 }
 
+.background-suv{
+  display: block;
+  width: 106%;
+  overflow: hidden;
+  margin-left: -40px;
+}
 /* ---- MODERN INFO SEKCIJA ---- */
 .modern-info {
   padding: 60px 40px;
