@@ -737,6 +737,24 @@ aside p {
   line-height: 1.6;
 }
 
+/* ---- CATEGORY SEKCIJA ---- */
+.category-section {
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+  padding: 24px 32px;
+  width: 106%;
+  margin-left: -32px;
+  background-color: var(--boja-primarna);
+}
+
+.category-section h1 {
+  font-size: 28px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-left: -32px;
+}
+
 /* Tekst ispod tabele */
 .ispodtabele {
   width: 106%;
