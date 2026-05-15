@@ -34,13 +34,7 @@
     <img src="images/audi logo crni.png"
          alt="Audi logo"
          class="logo">
-
-    <map name="audiMap">
-        <area shape="rect"
-              coords="0,0,300,150"
-              href="index.html"
-              alt="Početna stranica"> 
-    </map>
+        
 
 </div>
 
@@ -82,7 +76,7 @@
 
     <a href="kontakt.html">Dodatna oprema</a>
 
-    <a href="https://github.com/ammarsuljic-ui/Grupa15-TPTP-2026" target="_blank">
+    <a href="https://github.com/ammarsuljic-ui/Grupa15-TPTP-2026" target="_blank" rel="noopener noreferrer">
         GitHub Repozitorij
     </a>
 </nav>
@@ -116,46 +110,34 @@
 
 <section class="backgroundRegular-image">
 
-    <picture>
-        
-        <img src="images/audi pozadina.png"
-                alt="AUDI BOSNA I HERCEGOVINA"
-                usemap="#automap"
-                 class="background-image"
-                 width="1707"
-                 height="960">
-    </picture>
+    <div class="automap">
 
- 
+        <img src="images/audi pozadina.png"
+             alt="AUDI BOSNA I HERCEGOVINA"
+             class="background-image">
+
+        <!-- AUDI A6 -->
+        <a href="sadrzaj.html#audi-a6"
+           class="auto-link audi-a6"></a>
+
+        <!-- AUDI A3 -->
+        <a href="sadrzaj.html#audi-a3"
+           class="auto-link audi-a3"></a>
+
+        <!-- AUDI A5 -->
+        <a href="sadrzaj.html#audi-a5"
+           class="auto-link audi-a5"></a>
+
+    </div>
+
+</section>
+
     <noscript>
+        
         <h1>AUDI BOSNA I HERCEGOVINA</h1>
     </noscript>
 
-    
-    <map name="automap">
 
-        <!-- AUDI A6 -->
-    <area shape="poly"
-          coords="42,618,256,476,584,487,760,675,590,790,162,764"
-          href="sadrzaj.html#audi-a6"
-          alt="Audi A6">
-
-    <!-- A3 -->
-    <area shape="poly"
-          coords="746,536,930,508,1075,602,1016,738,788,723,706,620"
-          href="sadrzaj.html#audi-a3"
-          alt="Audi A3">
-
-    <!-- A5 -->
-    <area shape="poly"
-          coords="1072,594,1156,543,1402,533,1560,615,1548,736,1442,793,1208,786,1088,710"
-          href="sadrzaj.html#audi-a5"
-          alt="Audi A5">
-
-
-</map>
-
-</section>
                     <section class="modern-info">
 
                         <p class="section-tag">Premium iskustvo</p>
@@ -273,7 +255,7 @@
 
     <h2>Inovacija u svakom detalju.</h2>
 
-   <section class="tech-section">
+                        
 
    
 
@@ -305,52 +287,33 @@
 
 </section>
     
-                                <section class="backgroundSUV-image">
+    
 
-    <picture>
+    <section class="backgroundSUV-image">
+
+    <div class="suvmap">
 
         <img src="images/audi pozadina 3.png"
-                    alt="AUDI SUV MODELI"
-                    usemap="#suvmap"
-                    class="background-image"
-                    width="1707"
-                    height="960">
+             alt="AUDI SUV MODELI"
+             class="background-suv">
 
-    </picture>
+        <!-- Q5 -->
+        <a href="sadrzaj.html#audi-q5"
+           class="suv-link audi-q5"></a>
 
-   
-    <noscript> <!-- Ako korisnik nema omogućen JavaScript, prikazat će se ovaj naslov umjesto interaktivne mape -->
-        <h1>AUDI SUV MODELI</h1>
-    </noscript>
+        <!-- Q3 -->
+        <a href="sadrzaj.html#audi-q3"
+           class="suv-link audi-q3"></a>
 
-    <!-- MAPIRANJE SUV MODELA -->
-    <map name="suvmap">
+        <!-- RSQ8 -->
+        <a href="sadrzaj.html#audi-RSQ8"
+           class="suv-link audi-rsq8"></a>
 
-        <!-- Q5  -->
-        <area shape="poly"
-              coords="20,420,85,350,245,340,390,380,450,470,430,610,300,675,120,655,30,560"
-              href="sadrzaj.html#audi-q5"
-              alt="Audi Q5">
+        <!-- Q6 -->
+        <a href="sadrzaj.html#audi-Q6"
+           class="suv-link audi-q6"></a>
 
-        <!-- Q3  -->
-        <area shape="poly"
-              coords="455,420,535,350,700,345,825,395,860,500,815,620,670,655,510,630,445,545"
-              href="sadrzaj.html#audi-q3"
-              alt="Audi Q3">
-
-        <!-- RSQ8  -->
-        <area shape="poly"
-              coords="780,400,905,340,1080,345,1215,410,1245,530,1180,645,1000,665,840,635,770,530"
-              href="sadrzaj.html#audi-RSQ8"
-              alt="Audi RSQ8">
-
-        <!-- Q6  -->
-        <area shape="poly"
-              coords="1170,420,1300,350,1500,355,1645,430,1665,560,1580,680,1370,695,1215,650,1145,540" 
-              href="sadrzaj.html#audi-Q6"
-              alt="Audi Q6 e-tron">
-
-    </map>
+    </div>
 
 </section>
 
@@ -382,7 +345,7 @@
 
 
 <iframe
-    width="900"
+    width="100%"
     height="500"
 
     src="https://www.youtube.com/embed/RD_LmCPMa38"
@@ -424,7 +387,7 @@
 
     <iframe
         src="https://www.google.com/maps?q=Audi+saloni+Bosna+i+Hercegovina&output=embed" 
-        width="50%"
+        width="100%"
         height="600"
 
         loading="lazy"
@@ -444,6 +407,7 @@
     <li>
         <a href="https://www.acquattro.ba/"
            target="_blank"
+           rel="noopener noreferrer"
            style="color: white;">
            AC Quattro – Sarajevo
         </a>
@@ -452,6 +416,7 @@
     <li>
         <a href="https://mrm.ba/"
            target="_blank"
+           rel="noopener noreferrer"
            style="color: white;">
            MRM Audi Centar – Mostar
         </a>
@@ -460,6 +425,7 @@
     <li>
         <a href="https://www.audi.ba/"
            target="_blank"
+           rel="noopener noreferrer"
            style="color: white;">
            Audi Centar – Banja Luka
         </a>
@@ -468,6 +434,7 @@
     <li>
         <a href="https://interauto.ba/"
            target="_blank"
+           rel="noopener noreferrer"
            style="color: white;">
            Inter Auto – Tuzla
         </a>
@@ -476,6 +443,7 @@
     <li>
         <a href="https://adautocentar.ba/"
            target="_blank"
+           rel="noopener noreferrer"
            style="color:white;">
            AD Autocentar – Visoko
         </a>
@@ -497,9 +465,13 @@
         Pratite najnovije Audi modele, tehnologije i posebne ponude.
     </p>
 
-    <form>
+    <form action="#">
 
-        <input type="email" placeholder="Vaša email adresa">
+        <label for="email">Email adresa</label>
+
+<input id="email"
+       type="email"
+       placeholder="Vaša email adresa">
 
         <button type="submit">
             Prijavi se
@@ -549,7 +521,7 @@
     <div class="footer-links">
         <a href="kontakt.html">Kontakt</a> |
         
-        <a href="https://github.com/ammarsuljic-ui/Grupa15-TPTP-2026" target="_blank">
+        <a href="https://github.com/ammarsuljic-ui/Grupa15-TPTP-2026" target="_blank" rel="noopener noreferrer">
             GitHub Repozitorij
         </a>
     </div>
