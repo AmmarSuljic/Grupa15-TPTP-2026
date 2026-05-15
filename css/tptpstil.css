@@ -772,6 +772,27 @@ aside p {
   color: var(--boja-primarna);
 }
 
+/* ---- FOOTER GITHUB IKONA I ČLANOVI ---- */
+.github-icon {
+  height: 16px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.member a {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+
+.member a:hover {
+  color: var(--boja-primarna);
+}
 
 /* ============================================= */
 /* ---- SADRZAJ.HTML STILOVI ---- */
@@ -1444,6 +1465,10 @@ aside p {
   
   .uvod-modeli {
   background-color: #111111;
+  }
+
+    .github-icon {
+    filter: invert(1);
   }
 }
 
