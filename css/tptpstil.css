@@ -63,7 +63,7 @@ header {
  
 /* ---- DROPDOWN MENI ---- */
 
-/* Uradjeno uz pomoc Claude AI: .menu > ul */
+/* Prikaz uradjen uz pomoc Claude AI s razumijevanjem */
 .menu > ul {
   list-style: none;
   display: flex;
@@ -937,7 +937,46 @@ aside p {
   color: var(--boja-primarna);
 }
 
+/* ---- CONFIG BOX ---- */
+.config-box {
+  width: 106%;
+  margin-left: -32px;
+  padding: 24px 32px;
+  background-color: #111111;
+  border-left: 5px solid var(--boja-primarna);
+  margin-bottom: 24px;
+  text-align: center;
+}
 
+.config-box h3 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.config-box p {
+  font-size: 14px;
+  color: #aaaaaa !important;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.config-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: transparent;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-family: var(--font-glavni);
+  font-size: 14px;
+  border-bottom: 2px solid var(--boja-primarna);
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.config-btn:hover {
+  background-color: var(--boja-primarna);
+  border-bottom-color: transparent;
+}
 
 /* ============================================= */
 /* ---- KONTAKT.HTML STILOVI ---- */
