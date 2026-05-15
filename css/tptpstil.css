@@ -191,6 +191,13 @@ header {
   width: 100%;
 }
 
+/*Razmak izmedju slike i uvoda za modele */ 
+
+.uvodnastrana:has(.hero-slika) {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .malinaslov {
   font-size: 13px;
   letter-spacing: 0.1em;
@@ -707,6 +714,16 @@ aside p {
   line-height: 1.7;
 }
 
+.overlay-tekst {
+  padding: 20px 40px 60px 40px;
+}
+
+.overlay-tekst p {
+  font-size: 15px;
+  color: #aaaaaa;
+  line-height: 1.7;
+  max-width: 100%;
+}
 
 .opismodela {
   margin-bottom: 24px;
@@ -735,6 +752,14 @@ aside p {
   font-size: 14px;
   color: #555555;
   line-height: 1.6;
+}
+
+.hero-slika {
+  width: 106%;
+  margin-left: -40px;
+  margin-top: px;
+  display: block;
+  object-fit: cover;
 }
 
 /* ---- CATEGORY SEKCIJA ---- */
