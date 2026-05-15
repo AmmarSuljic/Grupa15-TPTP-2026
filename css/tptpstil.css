@@ -1005,9 +1005,11 @@ aside p {
 
 /* lista kategorija */
 .list-section {
-  max-width: 1100px;
-  margin: 0 auto 60px auto;
-  padding: 0 32px;
+  width: 106%;
+  margin-bottom: 24px;
+  font-size: 14px;
+  margin-left: 410px;
+
 }
 
 .list-section h2 {
@@ -1048,6 +1050,15 @@ aside p {
 
 .model-list > li > ul > li a:hover {
   color: var(--boja-primarna);
+}
+
+.model-list > li > a {
+  color: var(--boja-primarna);
+  text-decoration: none;
+}
+
+.model-list > li > a:hover {
+  color: #880015;
 }
 
 /* ---- CONFIG BOX ---- */
