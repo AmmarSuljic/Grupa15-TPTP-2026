@@ -1550,6 +1550,22 @@ aside p {
   .spec-table td {
     padding: 10px 12px;
   }
+
+  .cookie-banner {
+    width: 320px;
+    bottom: 20px;
+    left: 20px;
+    padding: 18px;
+  }
+
+  .cookie-content p {
+    font-size: 13px;
+  } 
+
+  .cookie-buttons button {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
 }
 
 /* Mobitel */
@@ -1601,7 +1617,6 @@ aside p {
   .newsletter h2 {
     font-size: 22px;
   }
-
   
   .hero-btn {
     display: block;
@@ -1610,19 +1625,16 @@ aside p {
     text-align: center;
   }
 
-  
   .tech-grid {
     grid-template-columns: 1fr;
     padding: 16px;
   }
-
   
   iframe {
     width: 100%;
     height: 250px;
   }
 
-  
   .mapa {
     flex-direction: column;
   }
@@ -1635,7 +1647,6 @@ aside p {
     width: 100%;
   }
 
-  
   .newsletter input[type="email"] {
     width: 100%;
     margin-bottom: 8px;
@@ -1646,7 +1657,6 @@ aside p {
     width: 100%;
   }
 
-  
   .site-footer {
     width: 100%;
     margin-left: 0;
@@ -1665,25 +1675,21 @@ aside p {
     overflow-x: auto;
   }
 
-  
   .opismodela {
     width: 100%;
     margin-left: 0;
   }
 
- 
   .ispodtabele {
     width: 100%;
     margin-left: 0;
   }
 
-  
   .config-box {
     width: 100%;
     margin-left: 0;
   }
 
- 
   .category-section {
     width: 100%;
     margin-left: 0;
@@ -1693,7 +1699,6 @@ aside p {
   .category-section h1 {
     font-size: 20px;
   }
-
   
   .nav {
     gap: 4px;
@@ -1703,7 +1708,6 @@ aside p {
     font-size: 11px;
     padding: 4px 8px;
   }
-
   
   .glavni-naslov {
     font-size: 28px;
@@ -1722,9 +1726,106 @@ aside p {
   }
 
   .site-footer-kontakt {
-  width: 100%;
-  margin-left: 0;
-  text-align: center;
-  align-items: center;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
   }
+
+  .cookie-banner{
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    width: auto;
+    padding: 18px;
+    }
+
+  .cookie-buttons{
+    flex-direction: column;
+    }
+}
+
+/*---- COOKIES ----*/
+
+.cookie-banner{
+
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 380px;
+    max-width: calc(100% - 40px);
+    background: rgba(17,17,17,0.96);
+    border-left: 5px solid #BB0A21;
+    border-radius: 14px;
+    padding: 20px;
+    z-index: 9999;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+    backdrop-filter: blur(10px);
+    animation: cookieFade 0.5s ease;
+}
+
+.cookie-content p{
+
+    color: #d3d1d1;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.cookie-buttons{
+
+    display: flex;
+    gap: 12px;
+}
+
+.cookie-buttons button{
+
+    flex: 1;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#acceptCookies{
+
+    background: #BB0A21;
+    color: #ffffff;
+}
+
+#acceptCookies:hover{
+
+    background: #880015;
+    transform: translateY(-2px);
+}
+
+#declineCookies{
+
+    background: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+#declineCookies:hover{
+
+    background: #3a3939;
+    transform: translateY(-2px);
+}
+
+/*---- ANIMACIJA COOKIES ----*/
+
+@keyframes cookieFade{
+
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
