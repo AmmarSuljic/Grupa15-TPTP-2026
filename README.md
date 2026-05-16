@@ -1,6 +1,4 @@
 
-# Grupa15-TPTP-2026
-=======
 # Grupa15-TPTP-2026 Audi BiH stranica
 
 
