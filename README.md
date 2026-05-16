@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 # Grupa15-TPTP-2026
 =======
 # Grupa15-TPTP-2026 Audi BiH stranica
->>>>>>> 3a56728 ( popravljena adresa profila)
+
 
 ## Tim
 Ammar Suljić  
@@ -15,8 +15,5 @@ Web stranica Audi BiH prikazuje modele vozila i uključuje interaktivne funkcion
 ## Pokretanje
 Otvoriti `index.html` u browseru.
 ili preko linka 
-<<<<<<< HEAD
 https://ammarsuljic.github.io/Grupa15-TPTP-2026
-=======
-https://ammarsuljic-ui.github.io/Grupa15-TPTP-2026/
->>>>>>> 3a56728 ( popravljena adresa profila)
+
