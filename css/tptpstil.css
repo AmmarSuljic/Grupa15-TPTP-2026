@@ -1209,6 +1209,15 @@ aside p {
   padding: 0 32px;
 }
 
+.pozadinakontakt{
+  background-image: url("images/audi kontakt.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
 .page-title {
   font-size: 20px;
   color: var(--boja-tekst);
