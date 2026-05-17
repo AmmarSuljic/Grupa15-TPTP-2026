@@ -8,10 +8,10 @@ sa fokusom na responzivan dizajn, korisničko iskustvo i dinamičko upravljanje 
 ## Članovi grupe
 
 | Ime i prezime | GitHub | Zaduženje |
-|---|---|
-| Ammar Suljić |  HTML struktura |
-| Anida Jaganjac |  CSS dizajn i responzivnost |
-| Andrej Hajdukov |  JavaScript funkcionalnosti |
+|---|---|---|
+| Ammar Suljić | @AmmarSuljic | HTML struktura |
+| Anida Jaganjac | @qnidaaa | CSS dizajn i responzivnost |
+| Andrej Hajdukov | @andrejhajdukov | JavaScript funkcionalnosti |
 
 ## Tehnologije
 - HTML5
